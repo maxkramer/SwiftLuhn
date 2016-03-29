@@ -10,11 +10,11 @@ This is a port of the Luhn Algorithm, generally used for validating debit/credit
 Objective-C port can be found at [https://github.com/MaxKramer/ObjectiveLuhn](https://github.com/MaxKramer/ObjectiveLuhn).
 
 ## Usage
----
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Installation
----
+
 SwiftLuhn is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
@@ -23,7 +23,6 @@ pod "SwiftLuhn"
 ```
 
 ## Usage
----
 
 ### Validation
 
@@ -69,15 +68,15 @@ catch {
 }
 ```
 ## Sources
----
+
 |Name|Website|Reason|
 |:---|:------|:-----|
 |Paypal|[http://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/credit_card_numbers.htm](http://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/credit_card_numbers.htm)|List of valid credit card numbers for the unit tests|
 
 ## Author
----
+
 Max Kramer, max@maxkramer.co, @maxkramer
 
 ## License
----
+
 SwiftLuhn is available under the MIT license. See the LICENSE file for more info.
