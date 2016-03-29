@@ -29,7 +29,7 @@ pod "SwiftLuhn"
     
 Call the class method which will throws an exception `ObjectiveLuhn.CardError` if the card is invalid.
 
-```
+```swift
 let cardNumber = "378282246310005"
 do {
     try ObjectiveLuhn.performLuhnAlgorithm(cardNumber)
@@ -42,7 +42,7 @@ catch {
 
 Alternatively, you can use the `String` category:
 
-```
+```swift
 let isValid = cardNumber.isValidCardNumber()
 ```
 
@@ -59,7 +59,7 @@ You can also get the type of the card being used which will be one of:
 |Diner's Club|
 |JCB|
 
-```
+```swift
 do {
     let cardType = try ObjectiveLuhn.cardType(cardNumber)
 }
