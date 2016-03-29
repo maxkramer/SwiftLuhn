@@ -23,4 +23,9 @@ public extension String {
         let cardType = try? SwiftLuhn.cardType(self)
         return cardType
     }
+    
+    public func formattedCardNumber() -> String {
+        let numbersOnlyEquivalent = stringByReplacingOccurrencesOfString("[^0-9]", withString: "", options: .RegularExpressionSearch, range: nil)
+        return numbersOnlyEquivalent.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+    }
 }

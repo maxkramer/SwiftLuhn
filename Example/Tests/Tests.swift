@@ -37,6 +37,40 @@ class Tests: XCTestCase {
         }
     }
     
+    func testFormattedCardNumber() {
+        // should only be numbers 0-9
+        // no white space or new lines
+        
+        func containsOnlyLettersAndNumbers(cardNumber: String) -> Bool {
+            let numbersRegex = "[0-9]"
+            let replacedNumbers = cardNumber.stringByReplacingOccurrencesOfString(numbersRegex, withString: "", options: .RegularExpressionSearch, range: nil)
+            
+            return replacedNumbers.characters.count == 0
+        }
+        
+        func containsNoWhitespaceOrNewlines(cardNumber: String) -> Bool {
+            let withProhibitedContents = " \n  \n " + cardNumber + " \n  \n "
+            let formattedContents = withProhibitedContents.formattedCardNumber()
+            
+            return formattedContents.characters.count == cardNumber.characters.count
+        }
+        
+        let incorrectlyFormattedNumbers = [
+            "378-28-22-46-31-00-05",
+            "\n371-449635398431\n",
+            "37ajf8f7df3d f44eeee936..a>71000",
+            "-\n-3787344 Tcx)_936710<@00",
+            "<-\n 3056 93 09025904->"
+        ]
+        
+        incorrectlyFormattedNumbers.forEach {
+            let formattedEquivalent = $0.formattedCardNumber()
+            XCTAssertTrue(containsOnlyLettersAndNumbers(formattedEquivalent))
+            XCTAssertTrue(containsNoWhitespaceOrNewlines(formattedEquivalent))
+            XCTAssertTrue(formattedEquivalent.isValidCardNumber())
+        }
+    }
+    
     func testValidCardNumbersAreValid() {
         validCards.forEach {
             XCTAssertTrue($0.number.isValidCardNumber())

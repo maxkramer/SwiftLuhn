@@ -41,12 +41,15 @@ public class SwiftLuhn {
     }
     
     class func performLuhnAlgorithm(cardNumber: String) throws {
-        guard cardNumber.characters.count >= 9 else {
+        
+        let formattedCardNumber = cardNumber.formattedCardNumber()
+        
+        guard formattedCardNumber.characters.count >= 9 else {
             throw CardError.Invalid
         }
         
-        let originalCheckDigit = cardNumber.characters.last!
-        let characters = cardNumber.characters.dropLast().reverse()
+        let originalCheckDigit = formattedCardNumber.characters.last!
+        let characters = formattedCardNumber.characters.dropLast().reverse()
         
         var digitSum = 0
         
