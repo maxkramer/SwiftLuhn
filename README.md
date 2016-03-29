@@ -1,6 +1,6 @@
 # SwiftLuhn
 
-[![CI Status](http://img.shields.io/travis/Max Kramer/SwiftLuhn.svg?style=flat)](https://travis-ci.org/Max Kramer/SwiftLuhn)
+[![CI Status](http://img.shields.io/travis/MaxKramer/SwiftLuhn.svg?style=flat)](https://travis-ci.org/MaxKramer/SwiftLuhn)
 [![Version](https://img.shields.io/cocoapods/v/SwiftLuhn.svg?style=flat)](http://cocoapods.org/pods/SwiftLuhn)
 [![License](https://img.shields.io/cocoapods/l/SwiftLuhn.svg?style=flat)](http://cocoapods.org/pods/SwiftLuhn)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftLuhn.svg?style=flat)](http://cocoapods.org/pods/SwiftLuhn)
