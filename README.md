@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/SwiftLuhn.svg?style=flat)](http://cocoapods.org/pods/SwiftLuhn)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftLuhn.svg?style=flat)](http://cocoapods.org/pods/SwiftLuhn)
 
-This is a port of the Luhn Algorithm, generally used for validating Credit Card details, to Swift.
+This is a port of the Luhn Algorithm, generally used for validating debit/credit card details, written in Swift.
 
 Objective-C port can be found at [https://github.com/MaxKramer/ObjectiveLuhn](https://github.com/MaxKramer/ObjectiveLuhn).
 
@@ -33,7 +33,7 @@ Call the class method which will throws an exception `ObjectiveLuhn.CardError` i
 ```
 let cardNumber = "378282246310005"
 do {
-    try? ObjectiveLuhn.performLuhnAlgorithm(cardNumber)
+    try ObjectiveLuhn.performLuhnAlgorithm(cardNumber)
     // process payment
 }
 catch {
