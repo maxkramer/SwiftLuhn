@@ -61,7 +61,7 @@ You can also get the type of the card being used which will be one of:
 
 ```
 do {
-    let cardType = ObjectiveLuhn.cardType(cardNumber)
+    let cardType = try ObjectiveLuhn.cardType(cardNumber)
 }
 catch {
 	// card is invalid
