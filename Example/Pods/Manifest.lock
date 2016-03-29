@@ -1,0 +1,14 @@
+PODS:
+  - SwiftLuhn (0.1.0)
+
+DEPENDENCIES:
+  - SwiftLuhn (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftLuhn:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SwiftLuhn: 3acb9c358cca7a4567ca6105191d1c2e32a29db0
+
+COCOAPODS: 0.39.0

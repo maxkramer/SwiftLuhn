@@ -1,0 +1,808 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FA9DB93BB3E7AE988E914EE16F35879 /* SwiftLuhn-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B92D0C90D9EF32269430373B2234C9D /* SwiftLuhn-dummy.m */; };
+		1B3FEB9960068542963CEE372AAEE39B /* SwiftLuhn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 066C6254D7AABC8529B8D98D4A81C9D1 /* SwiftLuhn.bundle */; };
+		25745C578DBB817924F389645419C712 /* SwiftLuhn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4E6EF57C1EF0FE393CFBC2AFCC3D2 /* SwiftLuhn.swift */; };
+		257FD27646A8CD4333B5D09541B61F54 /* String+SwiftLuhn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A35F81A1DB5C689113E8B6BE4EB558 /* String+SwiftLuhn.swift */; };
+		5094B6BD3B79863DB61CFC61F4D82CF1 /* Pods-SwiftLuhn_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F1D4F0A702CEE2ADFE0F37BD71D7598 /* Pods-SwiftLuhn_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BA3ADAB30485EFF5B3E2E2EB8509186 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		70AC461645133610A951AE67AE2EB13C /* Pods-SwiftLuhn_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2506B9F0F21714A4ABBD68F3466867AA /* Pods-SwiftLuhn_Example-dummy.m */; };
+		782E048E49C1E5684DB963E5B95E5881 /* Pods-SwiftLuhn_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 807F1D3C325859E21BC118C7C1014DB9 /* Pods-SwiftLuhn_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BE35B0F2DBA971FB7D3017F490D8604 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		B1BCF7DA7055F5BA8370832146667162 /* Pods-SwiftLuhn_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6839F20BB0120C19F2BE798E4D714 /* Pods-SwiftLuhn_Tests-dummy.m */; };
+		D8BFF86901DE58225543955D2FE56CA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		FE0A9542A69BC6061ED299AA1A7230E7 /* SwiftLuhn-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A3FF3DCAFE7AC85836B29EBF38C4644 /* SwiftLuhn-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC436D3205C5A8DD6DED93E221386345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46727E4A3081F05430C2AE6F3D8C9B62;
+			remoteInfo = "SwiftLuhn-SwiftLuhn";
+		};
+		B330169CAE7E56358EFE6DB838A048A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93502970862AF8E7D7C4B1293F161939;
+			remoteInfo = SwiftLuhn;
+		};
+		E369C335148B6C4C836EF6B3CF88932B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93502970862AF8E7D7C4B1293F161939;
+			remoteInfo = SwiftLuhn;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		066C6254D7AABC8529B8D98D4A81C9D1 /* SwiftLuhn.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLuhn.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FB68CDA85DD28484F0CBFDB3F0A8DA0 /* Pods-SwiftLuhn_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftLuhn_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		128D10F40315D2B10CE20EE5F378580D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A6ECFF23B3F75CB4E0A1210F99F15AD /* Pods-SwiftLuhn_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftLuhn_Example-resources.sh"; sourceTree = "<group>"; };
+		1BBBF1F8AB4763DBC89C2053AE4C9703 /* Pods-SwiftLuhn_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftLuhn_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2506B9F0F21714A4ABBD68F3466867AA /* Pods-SwiftLuhn_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftLuhn_Example-dummy.m"; sourceTree = "<group>"; };
+		2AF68C35E0C1946A2B9D2D37DEC91523 /* Pods-SwiftLuhn_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftLuhn_Tests.modulemap"; sourceTree = "<group>"; };
+		320FD3DA388176E893BAD799544FFC1F /* SwiftLuhn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftLuhn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F314929AAC1815918B706B8FD5BBE6 /* SwiftLuhn-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftLuhn-prefix.pch"; sourceTree = "<group>"; };
+		3B92D0C90D9EF32269430373B2234C9D /* SwiftLuhn-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftLuhn-dummy.m"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3F1D4F0A702CEE2ADFE0F37BD71D7598 /* Pods-SwiftLuhn_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftLuhn_Example-umbrella.h"; sourceTree = "<group>"; };
+		53E6DF9DCBA3AFA9D6F9F4D785981195 /* Pods-SwiftLuhn_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftLuhn_Tests-resources.sh"; sourceTree = "<group>"; };
+		5A3FF3DCAFE7AC85836B29EBF38C4644 /* SwiftLuhn-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftLuhn-umbrella.h"; sourceTree = "<group>"; };
+		6DF6839F20BB0120C19F2BE798E4D714 /* Pods-SwiftLuhn_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftLuhn_Tests-dummy.m"; sourceTree = "<group>"; };
+		807F1D3C325859E21BC118C7C1014DB9 /* Pods-SwiftLuhn_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftLuhn_Tests-umbrella.h"; sourceTree = "<group>"; };
+		81DFCD5DD0CB06855115A700FD2E0601 /* SwiftLuhn.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLuhn.xcconfig; sourceTree = "<group>"; };
+		8679D55A8257B8A718423D0DB9462AB5 /* SwiftLuhn.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftLuhn.modulemap; sourceTree = "<group>"; };
+		86D4E6EF57C1EF0FE393CFBC2AFCC3D2 /* SwiftLuhn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftLuhn.swift; sourceTree = "<group>"; };
+		9485272DEEE7A62BC34CD61E7527263C /* Pods_SwiftLuhn_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLuhn_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B343E0909D0FA6AB2A6F1CA5697C9EB /* Pods-SwiftLuhn_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftLuhn_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9B7496579FF22E4189ED35B237A6B141 /* Pods-SwiftLuhn_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftLuhn_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		A7ADB97BEC35A889C286F4F43709F9A5 /* Pods-SwiftLuhn_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftLuhn_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		B9A35F81A1DB5C689113E8B6BE4EB558 /* String+SwiftLuhn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+SwiftLuhn.swift"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CB94B9DD342A69D8691AD4206CFE0E81 /* Pods-SwiftLuhn_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftLuhn_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CF171C527475C152B654EE91A03D200B /* Pods-SwiftLuhn_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftLuhn_Example-frameworks.sh"; sourceTree = "<group>"; };
+		DBE4A46FCC9DD32B5D0DC3717253C0C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF51FB943B934AC4EE0FBFCA862CE0D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF71A0983195EA37B6D3080EB69D8BC6 /* Pods-SwiftLuhn_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftLuhn_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FCBCF6A87C43D8E3A903F1852B9CBDF3 /* Pods_SwiftLuhn_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLuhn_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD219073A1257D814FAD755557C758BA /* Pods-SwiftLuhn_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftLuhn_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FE514B1502AAE5A34C80278E4C003524 /* Pods-SwiftLuhn_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftLuhn_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FF7A2E5678F966E8A85FB0F1F1C65C70 /* Pods-SwiftLuhn_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftLuhn_Example.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00FDB70803AB2CDE6BF773B9876E1B37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BE35B0F2DBA971FB7D3017F490D8604 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		303983D2DB5C228A192661002BC5C7A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BA3ADAB30485EFF5B3E2E2EB8509186 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45BD5C297FEC74E65F7A394277B91686 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8BFF86901DE58225543955D2FE56CA8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5993DD9112F25CF08E1512F9C0008F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B003674709C649EEF82758A62285D44 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				128D10F40315D2B10CE20EE5F378580D /* Info.plist */,
+				8679D55A8257B8A718423D0DB9462AB5 /* SwiftLuhn.modulemap */,
+				81DFCD5DD0CB06855115A700FD2E0601 /* SwiftLuhn.xcconfig */,
+				3B92D0C90D9EF32269430373B2234C9D /* SwiftLuhn-dummy.m */,
+				37F314929AAC1815918B706B8FD5BBE6 /* SwiftLuhn-prefix.pch */,
+				5A3FF3DCAFE7AC85836B29EBF38C4644 /* SwiftLuhn-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SwiftLuhn";
+			sourceTree = "<group>";
+		};
+		1FF4C845DB3D18A821ACA225C8E6591C /* Pods-SwiftLuhn_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DBE4A46FCC9DD32B5D0DC3717253C0C7 /* Info.plist */,
+				2AF68C35E0C1946A2B9D2D37DEC91523 /* Pods-SwiftLuhn_Tests.modulemap */,
+				CB94B9DD342A69D8691AD4206CFE0E81 /* Pods-SwiftLuhn_Tests-acknowledgements.markdown */,
+				EF71A0983195EA37B6D3080EB69D8BC6 /* Pods-SwiftLuhn_Tests-acknowledgements.plist */,
+				6DF6839F20BB0120C19F2BE798E4D714 /* Pods-SwiftLuhn_Tests-dummy.m */,
+				A7ADB97BEC35A889C286F4F43709F9A5 /* Pods-SwiftLuhn_Tests-frameworks.sh */,
+				53E6DF9DCBA3AFA9D6F9F4D785981195 /* Pods-SwiftLuhn_Tests-resources.sh */,
+				807F1D3C325859E21BC118C7C1014DB9 /* Pods-SwiftLuhn_Tests-umbrella.h */,
+				1BBBF1F8AB4763DBC89C2053AE4C9703 /* Pods-SwiftLuhn_Tests.debug.xcconfig */,
+				FE514B1502AAE5A34C80278E4C003524 /* Pods-SwiftLuhn_Tests.release.xcconfig */,
+			);
+			name = "Pods-SwiftLuhn_Tests";
+			path = "Target Support Files/Pods-SwiftLuhn_Tests";
+			sourceTree = "<group>";
+		};
+		4CA803D9AAD07F505BC7AE12AB2E9D6A /* SwiftLuhn */ = {
+			isa = PBXGroup;
+			children = (
+				FF0D25B2F1492A757438DFB796912B26 /* Pod */,
+				B4DC0AF67B57F0894BD00F3C3A5C673D /* Resources */,
+				1B003674709C649EEF82758A62285D44 /* Support Files */,
+			);
+			name = SwiftLuhn;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		6A745815C6DED1D6ACBE450855E45D90 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CA803D9AAD07F505BC7AE12AB2E9D6A /* SwiftLuhn */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				6A745815C6DED1D6ACBE450855E45D90 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				A2CDE2F8EAD9A065A3C8DC466A517452 /* Products */,
+				9E2CA16678D43AE17B4C23C85564D53E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		84321B3C58994A28706D8263EA4A27C9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				86D4E6EF57C1EF0FE393CFBC2AFCC3D2 /* SwiftLuhn.swift */,
+				B9A35F81A1DB5C689113E8B6BE4EB558 /* String+SwiftLuhn.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		99F816772A927E1EE0833322E258D2CB /* Pods-SwiftLuhn_Example */ = {
+			isa = PBXGroup;
+			children = (
+				ECF51FB943B934AC4EE0FBFCA862CE0D /* Info.plist */,
+				FF7A2E5678F966E8A85FB0F1F1C65C70 /* Pods-SwiftLuhn_Example.modulemap */,
+				9B343E0909D0FA6AB2A6F1CA5697C9EB /* Pods-SwiftLuhn_Example-acknowledgements.markdown */,
+				9B7496579FF22E4189ED35B237A6B141 /* Pods-SwiftLuhn_Example-acknowledgements.plist */,
+				2506B9F0F21714A4ABBD68F3466867AA /* Pods-SwiftLuhn_Example-dummy.m */,
+				CF171C527475C152B654EE91A03D200B /* Pods-SwiftLuhn_Example-frameworks.sh */,
+				1A6ECFF23B3F75CB4E0A1210F99F15AD /* Pods-SwiftLuhn_Example-resources.sh */,
+				3F1D4F0A702CEE2ADFE0F37BD71D7598 /* Pods-SwiftLuhn_Example-umbrella.h */,
+				0FB68CDA85DD28484F0CBFDB3F0A8DA0 /* Pods-SwiftLuhn_Example.debug.xcconfig */,
+				FD219073A1257D814FAD755557C758BA /* Pods-SwiftLuhn_Example.release.xcconfig */,
+			);
+			name = "Pods-SwiftLuhn_Example";
+			path = "Target Support Files/Pods-SwiftLuhn_Example";
+			sourceTree = "<group>";
+		};
+		9E2CA16678D43AE17B4C23C85564D53E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				99F816772A927E1EE0833322E258D2CB /* Pods-SwiftLuhn_Example */,
+				1FF4C845DB3D18A821ACA225C8E6591C /* Pods-SwiftLuhn_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A2B239C7973884E4DFBE3B4922FDF77E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		A2CDE2F8EAD9A065A3C8DC466A517452 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCBCF6A87C43D8E3A903F1852B9CBDF3 /* Pods_SwiftLuhn_Example.framework */,
+				9485272DEEE7A62BC34CD61E7527263C /* Pods_SwiftLuhn_Tests.framework */,
+				066C6254D7AABC8529B8D98D4A81C9D1 /* SwiftLuhn.bundle */,
+				320FD3DA388176E893BAD799544FFC1F /* SwiftLuhn.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4DC0AF67B57F0894BD00F3C3A5C673D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE939F014559C17140427125F8159EA7 /* Pod */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EE939F014559C17140427125F8159EA7 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A2B239C7973884E4DFBE3B4922FDF77E /* Assets */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		FF0D25B2F1492A757438DFB796912B26 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				84321B3C58994A28706D8263EA4A27C9 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2074D4675F339FBC093338EFC4222F5B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5094B6BD3B79863DB61CFC61F4D82CF1 /* Pods-SwiftLuhn_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D0AAEEDDF61C8ECC7DD6A061E3D947C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				782E048E49C1E5684DB963E5B95E5881 /* Pods-SwiftLuhn_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC7B9E92941E146C9D3DC7A66F65704C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE0A9542A69BC6061ED299AA1A7230E7 /* SwiftLuhn-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		46727E4A3081F05430C2AE6F3D8C9B62 /* SwiftLuhn-SwiftLuhn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4269C2EBB56D6B7BEEC0981F403D59B8 /* Build configuration list for PBXNativeTarget "SwiftLuhn-SwiftLuhn" */;
+			buildPhases = (
+				92848737E707A5031F4DF7D71D6B456D /* Sources */,
+				F5993DD9112F25CF08E1512F9C0008F1 /* Frameworks */,
+				2394AA7B93484F20C29A4E7F1EBFE241 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftLuhn-SwiftLuhn";
+			productName = "SwiftLuhn-SwiftLuhn";
+			productReference = 066C6254D7AABC8529B8D98D4A81C9D1 /* SwiftLuhn.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		93502970862AF8E7D7C4B1293F161939 /* SwiftLuhn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC1637CCAFB726B632B9BEEE8871DB32 /* Build configuration list for PBXNativeTarget "SwiftLuhn" */;
+			buildPhases = (
+				3B150D1FA6562A01BE445F1258547DE6 /* Sources */,
+				303983D2DB5C228A192661002BC5C7A6 /* Frameworks */,
+				84C1239BBB409DABD08C323C0AD54B23 /* Resources */,
+				BC7B9E92941E146C9D3DC7A66F65704C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72E516DFE43ED94BC8E9D601233B5116 /* PBXTargetDependency */,
+			);
+			name = SwiftLuhn;
+			productName = SwiftLuhn;
+			productReference = 320FD3DA388176E893BAD799544FFC1F /* SwiftLuhn.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B7098079EC43E5AC5663F23D7D3EB8C5 /* Pods-SwiftLuhn_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AA763FAF8F99F375B3823232CC3F122 /* Build configuration list for PBXNativeTarget "Pods-SwiftLuhn_Example" */;
+			buildPhases = (
+				720CEE701EDDE3269A017E8C6E5B1610 /* Sources */,
+				45BD5C297FEC74E65F7A394277B91686 /* Frameworks */,
+				2074D4675F339FBC093338EFC4222F5B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55126FA3BFB9F1DC6715EE84D15F9BFE /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftLuhn_Example";
+			productName = "Pods-SwiftLuhn_Example";
+			productReference = FCBCF6A87C43D8E3A903F1852B9CBDF3 /* Pods_SwiftLuhn_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CFE12E5A1BD29FAE3936C0532513895A /* Pods-SwiftLuhn_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59B03A0A65FBA7DB0131B890639803A3 /* Build configuration list for PBXNativeTarget "Pods-SwiftLuhn_Tests" */;
+			buildPhases = (
+				895F19D363F636E069B1A51F9AD0B6BF /* Sources */,
+				00FDB70803AB2CDE6BF773B9876E1B37 /* Frameworks */,
+				7D0AAEEDDF61C8ECC7DD6A061E3D947C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62211370185F8D7085508B02B85A3477 /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftLuhn_Tests";
+			productName = "Pods-SwiftLuhn_Tests";
+			productReference = 9485272DEEE7A62BC34CD61E7527263C /* Pods_SwiftLuhn_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A2CDE2F8EAD9A065A3C8DC466A517452 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7098079EC43E5AC5663F23D7D3EB8C5 /* Pods-SwiftLuhn_Example */,
+				CFE12E5A1BD29FAE3936C0532513895A /* Pods-SwiftLuhn_Tests */,
+				93502970862AF8E7D7C4B1293F161939 /* SwiftLuhn */,
+				46727E4A3081F05430C2AE6F3D8C9B62 /* SwiftLuhn-SwiftLuhn */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2394AA7B93484F20C29A4E7F1EBFE241 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C1239BBB409DABD08C323C0AD54B23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B3FEB9960068542963CEE372AAEE39B /* SwiftLuhn.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B150D1FA6562A01BE445F1258547DE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25745C578DBB817924F389645419C712 /* SwiftLuhn.swift in Sources */,
+				257FD27646A8CD4333B5D09541B61F54 /* String+SwiftLuhn.swift in Sources */,
+				0FA9DB93BB3E7AE988E914EE16F35879 /* SwiftLuhn-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		720CEE701EDDE3269A017E8C6E5B1610 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70AC461645133610A951AE67AE2EB13C /* Pods-SwiftLuhn_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		895F19D363F636E069B1A51F9AD0B6BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1BCF7DA7055F5BA8370832146667162 /* Pods-SwiftLuhn_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92848737E707A5031F4DF7D71D6B456D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55126FA3BFB9F1DC6715EE84D15F9BFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLuhn;
+			target = 93502970862AF8E7D7C4B1293F161939 /* SwiftLuhn */;
+			targetProxy = E369C335148B6C4C836EF6B3CF88932B /* PBXContainerItemProxy */;
+		};
+		62211370185F8D7085508B02B85A3477 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLuhn;
+			target = 93502970862AF8E7D7C4B1293F161939 /* SwiftLuhn */;
+			targetProxy = B330169CAE7E56358EFE6DB838A048A0 /* PBXContainerItemProxy */;
+		};
+		72E516DFE43ED94BC8E9D601233B5116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftLuhn-SwiftLuhn";
+			target = 46727E4A3081F05430C2AE6F3D8C9B62 /* SwiftLuhn-SwiftLuhn */;
+			targetProxy = AC436D3205C5A8DD6DED93E221386345 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0066E5F3CC93AC9DCB3A1D1F0DD2A489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FB68CDA85DD28484F0CBFDB3F0A8DA0 /* Pods-SwiftLuhn_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftLuhn_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftLuhn_Example/Pods-SwiftLuhn_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SwiftLuhn_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0A8DE0C4C59E30C32B4DAEDF97AC5263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BBBF1F8AB4763DBC89C2053AE4C9703 /* Pods-SwiftLuhn_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftLuhn_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftLuhn_Tests/Pods-SwiftLuhn_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SwiftLuhn_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0B2A92420C9529DE436D50C516A4503D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD219073A1257D814FAD755557C758BA /* Pods-SwiftLuhn_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftLuhn_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftLuhn_Example/Pods-SwiftLuhn_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SwiftLuhn_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CB2935C59F5EA8B3FBD09C9DDCF8A8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81DFCD5DD0CB06855115A700FD2E0601 /* SwiftLuhn.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SwiftLuhn;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5D7B4FDC49DCC22CB8E1442A8A7B226E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81DFCD5DD0CB06855115A700FD2E0601 /* SwiftLuhn.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftLuhn/SwiftLuhn-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftLuhn/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftLuhn/SwiftLuhn.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftLuhn;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EB49B281664A0A054FE5A9E35F075BF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81DFCD5DD0CB06855115A700FD2E0601 /* SwiftLuhn.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftLuhn/SwiftLuhn-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftLuhn/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftLuhn/SwiftLuhn.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftLuhn;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EE13A6696AC2AFC598B574BC1B2794E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81DFCD5DD0CB06855115A700FD2E0601 /* SwiftLuhn.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SwiftLuhn;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		EEF51802D6A7E20CB369FF9DCAFCF8A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE514B1502AAE5A34C80278E4C003524 /* Pods-SwiftLuhn_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftLuhn_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftLuhn_Tests/Pods-SwiftLuhn_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SwiftLuhn_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4269C2EBB56D6B7BEEC0981F403D59B8 /* Build configuration list for PBXNativeTarget "SwiftLuhn-SwiftLuhn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE13A6696AC2AFC598B574BC1B2794E1 /* Debug */,
+				3CB2935C59F5EA8B3FBD09C9DDCF8A8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59B03A0A65FBA7DB0131B890639803A3 /* Build configuration list for PBXNativeTarget "Pods-SwiftLuhn_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A8DE0C4C59E30C32B4DAEDF97AC5263 /* Debug */,
+				EEF51802D6A7E20CB369FF9DCAFCF8A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AA763FAF8F99F375B3823232CC3F122 /* Build configuration list for PBXNativeTarget "Pods-SwiftLuhn_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0066E5F3CC93AC9DCB3A1D1F0DD2A489 /* Debug */,
+				0B2A92420C9529DE436D50C516A4503D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC1637CCAFB726B632B9BEEE8871DB32 /* Build configuration list for PBXNativeTarget "SwiftLuhn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D7B4FDC49DCC22CB8E1442A8A7B226E /* Debug */,
+				EB49B281664A0A054FE5A9E35F075BF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

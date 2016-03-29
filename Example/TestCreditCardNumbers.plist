@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>valid</key>
+	<array>
+		<dict>
+			<key>number</key>
+			<string>378282246310005</string>
+			<key>type</key>
+			<string>american express</string>
+		</dict>
+		<dict>
+			<key>number</key>
+			<string>371449635398431</string>
+			<key>type</key>
+			<string>american express</string>
+		</dict>
+		<dict>
+			<key>number</key>
+			<string>378734493671000</string>
+			<key>type</key>
+			<string>american express</string>
+		</dict>
+		<dict>
+			<key>number</key>
+			<string>378734493671000</string>
+			<key>type</key>
+			<string>american express</string>
+		</dict>
+		<dict>
+			<key>number</key>
+			<string>30569309025904</string>
+			<key>type</key>
+			<string>diner&apos;s club</string>
+		</dict>
+		<dict>
+			<key>number</key>
+			<string>38520000023237</string>
+			<key>type</key>
+			<string>diner&apos;s club</string>
+		</dict>
+		<dict>
+			<key>number</key>
+			<string>6011111111111117</string>
+			<key>type</key>
+			<string>discover</string>
+		</dict>
+		<dict>
+			<key>number</key>
+			<string>6011000990139424</string>
+			<key>type</key>
+			<string>discover</string>
+		</dict>
+		<dict>
+			<key>number</key>
+			<string>3530111333300000</string>
+			<key>type</key>
+			<string>jcb</string>
+		</dict>
+		<dict>
+			<key>number</key>
+			<string>3566002020360505</string>
+			<key>type</key>
+			<string>jcb</string>
+		</dict>
+		<dict>
+			<key>number</key>
+			<string>5555555555554444</string>
+			<key>type</key>
+			<string>mastercard</string>
+		</dict>
+		<dict>
+			<key>number</key>
+			<string>5105105105105100</string>
+			<key>type</key>
+			<string>mastercard</string>
+		</dict>
+		<dict>
+			<key>number</key>
+			<string>4111111111111111</string>
+			<key>type</key>
+			<string>visa</string>
+		</dict>
+		<dict>
+			<key>number</key>
+			<string>4012888888881881</string>
+			<key>type</key>
+			<string>visa</string>
+		</dict>
+		<dict>
+			<key>number</key>
+			<string>4222222222222</string>
+			<key>type</key>
+			<string>visa</string>
+		</dict>
+	</array>
+	<key>invalid</key>
+	<array>
+		<string>hello</string>
+		<string>testing-124024-11</string>
+		<string>p3wn3r4</string>
+		<string>l333t-h4x0r</string>
+		<string>1234567812345678</string>
+		<string>49927398717</string>
+		<string>33036103566</string>
+		<string>32129486301</string>
+		<string>32882469031</string>
+		<string>33841333111</string>
+		<string>30086326829</string>
+		<string>41609d620055</string>
+		<string>43717494988</string>
+		<string>60131753761</string>
+		<string>62752137389</string>
+		<string>51837652542</string>
+		<string>53372289611</string>
+		<string>51484050781</string>
+		<string>93392751739</string>
+	</array>
+</dict>
+</plist>
