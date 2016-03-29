@@ -26,13 +26,13 @@ pod "SwiftLuhn"
 
 ### Validation
 
-    
-Call the class method which will throws an exception `ObjectiveLuhn.CardError` if the card is invalid.
+
+Call the class method which will throws an exception `SwiftLuhn.CardError` if the card is invalid.
 
 ```swift
 let cardNumber = "378282246310005"
 do {
-    try ObjectiveLuhn.performLuhnAlgorithm(cardNumber)
+    try SwiftLuhn.performLuhnAlgorithm(cardNumber)
     // process payment
 }
 catch {
@@ -61,7 +61,7 @@ You can also get the type of the card being used which will be one of:
 
 ```swift
 do {
-    let cardType = try ObjectiveLuhn.cardType(cardNumber)
+    let cardType = try SwiftLuhn.cardType(cardNumber)
 }
 catch {
 	// card is invalid
@@ -75,7 +75,7 @@ catch {
 
 ## Author
 
-Max Kramer, max@maxkramer.co, @maxkramer
+Max Kramer, max@maxkramer.co, [@maxkramer](http://twitter.com/maxkramer)
 
 ## License
 
