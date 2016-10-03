@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SwiftLuhn"
-  s.version          = "0.1.1"
+  s.version          = "0.2.0"
   s.summary          = "SwiftLuhn is a port of the Luhn algorithm, used for validating debit/credit card details."
   s.description      = <<-DESC
 This is a port of the Luhn Algorithm, generally used for validating debit/credit card details, to Swift.
