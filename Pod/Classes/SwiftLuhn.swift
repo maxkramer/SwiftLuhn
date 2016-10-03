@@ -8,52 +8,52 @@
 
 import Foundation
 
-public class SwiftLuhn {
+open class SwiftLuhn {
     public enum CardType: Int {
-        case Amex = 0
-        case Visa
-        case Mastercard
-        case Discover
-        case DinersClub
-        case JCB
+        case amex = 0
+        case visa
+        case mastercard
+        case discover
+        case dinersClub
+        case jcb
     }
     
-    public enum CardError: ErrorType {
-        case Unsupported
-        case Invalid
+    public enum CardError: Error {
+        case unsupported
+        case invalid
     }
     
-    private class func regularExpression(cardType: CardType) -> String {
+    fileprivate class func regularExpression(for cardType: CardType) -> String {
         switch cardType {
-        case .Amex:
+        case .amex:
             return "^3[47][0-9]{5,}$";
-        case .DinersClub:
+        case .dinersClub:
             return "^3(?:0[0-5]|[68][0-9])[0-9]{4,}$";
-        case .Discover:
+        case .discover:
             return "^6(?:011|5[0-9]{2})[0-9]{3,}$";
-        case .JCB:
+        case .jcb:
             return "^(?:2131|1800|35[0-9]{3})[0-9]{3,}$";
-        case .Mastercard:
+        case .mastercard:
             return "^5[1-5][0-9]{5,}$";
-        case .Visa:
+        case .visa:
             return "^4[0-9]{6,}$";
         }
     }
     
-    class func performLuhnAlgorithm(cardNumber: String) throws {
+    class func performLuhnAlgorithm(with cardNumber: String) throws {
         
         let formattedCardNumber = cardNumber.formattedCardNumber()
         
         guard formattedCardNumber.characters.count >= 9 else {
-            throw CardError.Invalid
+            throw CardError.invalid
         }
         
         let originalCheckDigit = formattedCardNumber.characters.last!
-        let characters = formattedCardNumber.characters.dropLast().reverse()
+        let characters = formattedCardNumber.characters.dropLast().reversed()
         
         var digitSum = 0
         
-        for (idx, character) in characters.enumerate() {
+        for (idx, character) in characters.enumerated() {
             let value = Int(String(character)) ?? 0
             if idx % 2 == 0 {
                 var product = value * 2
@@ -77,27 +77,27 @@ public class SwiftLuhn {
         let valid = originalCheckDigitInt == computedCheckDigit
         
         if valid == false {
-            throw CardError.Invalid
+            throw CardError.invalid
         }
     }
     
-    class func cardType(cardNumber: String) throws -> CardType {
+    class func cardType(for cardNumber: String) throws -> CardType {
         var foundCardType: CardType?
         
-        for i in CardType.Amex.rawValue...CardType.JCB.rawValue {
+        for i in CardType.amex.rawValue...CardType.jcb.rawValue {
             let cardType = CardType(rawValue: i)!
-            let regex = regularExpression(cardType)
+            let regex = regularExpression(for: cardType)
             
             let predicate = NSPredicate(format: "SELF MATCHES %@", regex)
             
-            if predicate.evaluateWithObject(cardNumber) == true {
+            if predicate.evaluate(with: cardNumber) == true {
                 foundCardType = cardType
                 break
             }
         }
         
         if foundCardType == nil {
-            throw CardError.Invalid
+            throw CardError.invalid
         }
         
         return foundCardType!
@@ -107,23 +107,23 @@ public class SwiftLuhn {
 public extension SwiftLuhn.CardType {
     func stringValue() -> String {
         switch self {
-        case .Amex:
+        case .amex:
             return "American Express"
-        case .Visa:
+        case .visa:
             return "Visa"
-        case .Mastercard:
+        case .mastercard:
             return "Mastercard"
-        case .Discover:
+        case .discover:
             return "Discover"
-        case .DinersClub:
+        case .dinersClub:
             return "Diner's Club"
-        case .JCB:
+        case .jcb:
             return "JCB"
         }
     }
     
     init?(string: String) {
-        switch string.lowercaseString {
+        switch string.lowercased() {
         case "american express":
             self.init(rawValue: 0)
         case "visa":

@@ -11,7 +11,7 @@ import Foundation
 public extension String {
     public func isValidCardNumber() -> Bool {
         do {
-            try SwiftLuhn.performLuhnAlgorithm(self)
+            try SwiftLuhn.performLuhnAlgorithm(with: self)
             return true
         }
         catch {
@@ -20,12 +20,12 @@ public extension String {
     }
     
     public func cardType() -> SwiftLuhn.CardType? {
-        let cardType = try? SwiftLuhn.cardType(self)
+        let cardType = try? SwiftLuhn.cardType(for: self)
         return cardType
     }
     
     public func formattedCardNumber() -> String {
-        let numbersOnlyEquivalent = stringByReplacingOccurrencesOfString("[^0-9]", withString: "", options: .RegularExpressionSearch, range: nil)
-        return numbersOnlyEquivalent.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        let numbersOnlyEquivalent = replacingOccurrences(of: "[^0-9]", with: "", options: .regularExpression, range: nil)
+        return numbersOnlyEquivalent.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
     }
 }
