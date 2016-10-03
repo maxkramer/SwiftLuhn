@@ -7,6 +7,8 @@
 
 This is a port of the Luhn Algorithm, generally used for validating debit/credit card details, written in Swift.
 
+SwiftLuhn's HEAD is written in Swift 3. If your project doesn't support Swift 3 yet, please use the [0.1.1 tag](https://github.com/MaxKramer/SwiftLuhn/releases/tag/0.1.1).
+
 Objective-C port can be found at [https://github.com/MaxKramer/ObjectiveLuhn](https://github.com/MaxKramer/ObjectiveLuhn).
 
 ## Usage
@@ -32,7 +34,7 @@ Call the class method which will throws an exception `SwiftLuhn.CardError` if th
 ```swift
 let cardNumber = "378282246310005"
 do {
-    try SwiftLuhn.performLuhnAlgorithm(cardNumber)
+    try SwiftLuhn.performLuhnAlgorithm(with: cardNumber)
     // process payment
 }
 catch {
@@ -61,7 +63,7 @@ You can also get the type of the card being used which will be one of:
 
 ```swift
 do {
-    let cardType = try SwiftLuhn.cardType(cardNumber)
+    let cardType = try SwiftLuhn.cardType(of: cardNumber)
 }
 catch {
 	// card is invalid
