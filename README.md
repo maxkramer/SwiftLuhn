@@ -2,6 +2,7 @@
 [![Swift](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](https://swift.org)
 [![Circle CI](https://circleci.com/gh/MaxKramer/SwiftLuhn.svg?style=shield)](https://circleci.com/gh/MaxKramer/SwiftLuhn)
 [![Version](https://img.shields.io/cocoapods/v/SwiftLuhn.svg?style=flat)](http://cocoapods.org/pods/SwiftLuhn)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/SwiftLuhn.svg?style=flat)](http://cocoapods.org/pods/SwiftLuhn)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftLuhn.svg?style=flat)](http://cocoapods.org/pods/SwiftLuhn)
 
@@ -17,11 +18,18 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-SwiftLuhn is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+SwiftLuhn is available through [CocoaPods](http://cocoapods.org) or Carthage (with or without using our pre-built binary). 
+
+To install it, simply add the following line to your Podfile:
 
 ```ruby
-pod "SwiftLuhn"
+pod "SwiftLuhn" # use '0.1.0' for Swift 2.X
+```
+
+Or alternatively the following line to your Cartfile:
+
+```swift
+github "MaxKramer/SwiftLuhn"
 ```
 
 ## Usage
@@ -69,6 +77,11 @@ catch {
 	// card is invalid
 }
 ```
+
+## Unit Tests
+
+To run the unit test suite, please open the example project and hit CMD + U.
+
 ## Sources
 
 |Name|Website|Reason|
