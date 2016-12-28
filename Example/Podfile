@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SwiftLuhn_Example' do
+  pod 'SwiftLuhn', :path => '../'
+
+  target 'SwiftLuhn_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

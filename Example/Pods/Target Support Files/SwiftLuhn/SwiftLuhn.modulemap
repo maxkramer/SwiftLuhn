@@ -1,0 +1,6 @@
+framework module SwiftLuhn {
+  umbrella header "SwiftLuhn-umbrella.h"
+
+  export *
+  module * { export * }
+}
