@@ -8,52 +8,63 @@
 
 import Foundation
 
-open class SwiftLuhn {
+public class SwiftLuhn {
     public enum CardType: Int {
-        case amex = 0
-        case visa
-        case mastercard
-        case discover
-        case dinersClub
-        case jcb
+        case Amex = 0
+        case Visa
+        case Mastercard
+        case Discover
+        case DinersClub
+        case JCB
+        case Elo
+        case HiperCard
+        case Aura
     }
     
-    public enum CardError: Error {
-        case unsupported
-        case invalid
+    public enum CardError: ErrorType {
+        case Unsupported
+        case Invalid
     }
     
-    fileprivate class func regularExpression(for cardType: CardType) -> String {
+    private class func regularExpression(cardType: CardType) -> String {
         switch cardType {
-        case .amex:
+        case .Amex:
             return "^3[47][0-9]{5,}$";
-        case .dinersClub:
+        case .DinersClub:
             return "^3(?:0[0-5]|[68][0-9])[0-9]{4,}$";
-        case .discover:
+        case .Discover:
             return "^6(?:011|5[0-9]{2})[0-9]{3,}$";
-        case .jcb:
+        case .JCB:
             return "^(?:2131|1800|35[0-9]{3})[0-9]{3,}$";
-        case .mastercard:
+        case .Mastercard:
             return "^5[1-5][0-9]{5,}$";
-        case .visa:
+        case .Visa:
             return "^4[0-9]{6,}$";
+        case .Elo:
+            return "^(636368|636369|636297|451416|438935|504175|506699)[0-9]{8,}$|^(50904|50905|50906)[0-9]{11,}$|^(5067|4576|4011)[0-9]{12,}$"
+        case .HiperCard:
+            return "^(38|60)[0-9]{11,17}$"
+        case .Aura:
+            return "^50[0-9]{14,17}$"
         }
     }
     
-    class func performLuhnAlgorithm(with cardNumber: String) throws {
-        
+    class func performLuhnAlgorithm(cardNumber: String?) throws {
+        guard let cardNumber = cardNumber else {
+            throw CardError.Invalid
+        }
         let formattedCardNumber = cardNumber.formattedCardNumber()
         
         guard formattedCardNumber.characters.count >= 9 else {
-            throw CardError.invalid
+            throw CardError.Invalid
         }
         
         let originalCheckDigit = formattedCardNumber.characters.last!
-        let characters = formattedCardNumber.characters.dropLast().reversed()
+        let characters = formattedCardNumber.characters.dropLast().reverse()
         
         var digitSum = 0
         
-        for (idx, character) in characters.enumerated() {
+        for (idx, character) in characters.enumerate() {
             let value = Int(String(character)) ?? 0
             if idx % 2 == 0 {
                 var product = value * 2
@@ -77,27 +88,27 @@ open class SwiftLuhn {
         let valid = originalCheckDigitInt == computedCheckDigit
         
         if valid == false {
-            throw CardError.invalid
+            throw CardError.Invalid
         }
     }
     
-    class func cardType(for cardNumber: String) throws -> CardType {
+    class func cardType(cardNumber: String) throws -> CardType {
         var foundCardType: CardType?
         
-        for i in CardType.amex.rawValue...CardType.jcb.rawValue {
+        for i in CardType.Amex.rawValue...CardType.Aura.rawValue {
             let cardType = CardType(rawValue: i)!
-            let regex = regularExpression(for: cardType)
+            let regex = regularExpression(cardType)
             
             let predicate = NSPredicate(format: "SELF MATCHES %@", regex)
             
-            if predicate.evaluate(with: cardNumber) == true {
+            if predicate.evaluateWithObject(cardNumber) == true {
                 foundCardType = cardType
                 break
             }
         }
         
         if foundCardType == nil {
-            throw CardError.invalid
+            throw CardError.Invalid
         }
         
         return foundCardType!
@@ -107,23 +118,29 @@ open class SwiftLuhn {
 public extension SwiftLuhn.CardType {
     func stringValue() -> String {
         switch self {
-        case .amex:
+        case .Amex:
             return "American Express"
-        case .visa:
+        case .Visa:
             return "Visa"
-        case .mastercard:
+        case .Mastercard:
             return "Mastercard"
-        case .discover:
+        case .Discover:
             return "Discover"
-        case .dinersClub:
+        case .DinersClub:
             return "Diner's Club"
-        case .jcb:
+        case .JCB:
             return "JCB"
+        case .Elo:
+            return "Elo"
+        case .HiperCard:
+            return "HiperCard"
+        case .Aura:
+            return "Aura"
         }
     }
     
     init?(string: String) {
-        switch string.lowercased() {
+        switch string.lowercaseString {
         case "american express":
             self.init(rawValue: 0)
         case "visa":
@@ -136,6 +153,12 @@ public extension SwiftLuhn.CardType {
             self.init(rawValue: 4)
         case "jcb":
             self.init(rawValue: 5)
+        case "elo":
+            self.init(rawValue: 6)
+        case "hipercard":
+            self.init(rawValue: 7)
+        case "aura":
+            self.init(rawValue: 8)
         default:
             return nil
         }
