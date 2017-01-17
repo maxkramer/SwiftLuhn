@@ -95,6 +95,8 @@ To run the unit test suite, please open the example project and hit CMD + U.
 
 Max Kramer, max@maxkramer.co, [@maxkramer](http://twitter.com/maxkramer)
 
+Elo, Hipercard and Aura by [@bocato]
+
 ## License
 
 SwiftLuhn is available under the MIT license. See the LICENSE file for more info.
