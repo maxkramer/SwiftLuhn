@@ -95,7 +95,7 @@ To run the unit test suite, please open the example project and hit CMD + U.
 
 Max Kramer, max@maxkramer.co, [@maxkramer](http://twitter.com/maxkramer)
 
-Elo, Hipercard and Aura by [@bocato]
+Elo, Hipercard and Aura by [@bocato](http://github.com/bocato/)
 
 ## License
 
