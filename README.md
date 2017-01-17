@@ -68,6 +68,9 @@ You can also get the type of the card being used which will be one of:
 |Discover|
 |Diner's Club|
 |JCB|
++|Elo|
++|Hipercard|
++|Aura|
 
 ```swift
 do {
