@@ -108,12 +108,12 @@ open class SwiftLuhn {
         }
     }
     
-    class func cardType(for cardNumber: String) throws -> CardType {
+    class func cardType(for cardNumber: String, suggest: Bool = false) throws -> CardType {
         var foundCardType: CardType?
         
         for i in CardType.amex.rawValue...CardType.jcb.rawValue {
             let cardType = CardType(rawValue: i)!
-            let regex = regularExpression(for: cardType)
+            let regex = suggest ? suggestionRegularExpression(for: cardType) : regularExpression(for: cardType)
             
             let predicate = NSPredicate(format: "SELF MATCHES %@", regex)
             
