@@ -16,13 +16,14 @@ open class SwiftLuhn {
         case discover
         case dinersClub
         case jcb
+        case maestro
+        case rupay
     }
     
     public enum CardError: Error {
         case unsupported
         case invalid
     }
-    
     fileprivate class func regularExpression(for cardType: CardType) -> String {
         switch cardType {
         case .amex:
@@ -37,6 +38,32 @@ open class SwiftLuhn {
             return "^5[1-5][0-9]{5,}$";
         case .visa:
             return "^4[0-9]{6,}$";
+        case .maestro:
+            return "^(5018|5020|5038|6304|6759|6761|6763)[0-9]{8,15}$";
+        case .rupay:
+            return "^6[0-9]{15}$";
+            
+        }
+    }
+    fileprivate class func suggestionRegularExpression(for cardType: CardType) -> String {
+        switch cardType {
+        case .amex:
+            return "^3[47][0-9]+$";
+        case .dinersClub:
+            return "^3(?:0[0-5]|[68][0-9])[0-9]+$";
+        case .discover:
+            return "^6(?:011|5[0-9]{2})[0-9]+$";
+        case .jcb:
+            return "^(?:2131|1800|35[0-9]{3})[0-9]+$";
+        case .mastercard:
+            return "^5[1-5][0-9]+$";
+        case .visa:
+            return "^4[0-9]+$";
+        case .maestro:
+            return "^(5018|5020|5038|6304|6759|6761|6763)[0-9]+$";
+        case .rupay:
+            return "^6[0-9]+$";
+            
         }
     }
     
@@ -81,12 +108,12 @@ open class SwiftLuhn {
         }
     }
     
-    class func cardType(for cardNumber: String) throws -> CardType {
+    class func cardType(for cardNumber: String, suggest: Bool = false) throws -> CardType {
         var foundCardType: CardType?
         
         for i in CardType.amex.rawValue...CardType.jcb.rawValue {
             let cardType = CardType(rawValue: i)!
-            let regex = regularExpression(for: cardType)
+            let regex = suggest ? suggestionRegularExpression(for: cardType) : regularExpression(for: cardType)
             
             let predicate = NSPredicate(format: "SELF MATCHES %@", regex)
             
@@ -119,6 +146,11 @@ public extension SwiftLuhn.CardType {
             return "Diner's Club"
         case .jcb:
             return "JCB"
+        case .maestro:
+            return "Maestro";
+        case .rupay:
+            return "Rupay";
+
         }
     }
     
@@ -136,6 +168,10 @@ public extension SwiftLuhn.CardType {
             self.init(rawValue: 4)
         case "jcb":
             self.init(rawValue: 5)
+        case "maestro":
+            self.init(rawValue: 6)
+        case "rupay":
+            self.init(rawValue: 7)
         default:
             return nil
         }

@@ -23,6 +23,10 @@ public extension String {
         let cardType = try? SwiftLuhn.cardType(for: self)
         return cardType
     }
+    public func suggestedCardType() -> SwiftLuhn.CardType? {
+        let cardType = try? SwiftLuhn.cardType(for: self, suggest: true)
+        return cardType
+    }
     
     public func formattedCardNumber() -> String {
         let numbersOnlyEquivalent = replacingOccurrences(of: "[^0-9]", with: "", options: .regularExpression, range: nil)
