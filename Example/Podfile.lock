@@ -1,5 +1,5 @@
 PODS:
-  - SwiftLuhn (0.1.0)
+  - SwiftLuhn (0.2.1)
 
 DEPENDENCIES:
   - SwiftLuhn (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SwiftLuhn: d3d68f95622f904b53d72839b701247ad15c15b5
+  SwiftLuhn: c6aab770b8097186f906675fd970f6772220a417
 
 PODFILE CHECKSUM: 9e1dbb60127e514c2f28a3f720501ce3568de03f
 

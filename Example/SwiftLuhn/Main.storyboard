@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,38 +18,47 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sa0-kX-WTY">
-                                <rect key="frame" x="264" y="219" width="72.5" height="36"/>
+                                <rect key="frame" x="151" y="210.5" width="72.5" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="378282246310005" borderStyle="roundedRect" placeholder="Card number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XI9-YK-h96">
-                                <rect key="frame" x="153" y="285" width="294" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XI9-YK-h96">
+                                <rect key="frame" x="87.5" y="318.5" width="200" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="CLu-2d-9bX"/>
-                                    <constraint firstAttribute="width" constant="294" id="qqG-RV-dAH"/>
+                                    <constraint firstAttribute="width" constant="200" id="fRf-wq-jv8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="kFE-16-fBb"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsf-xE-g9R" userLabel="Type Label">
+                                <rect key="frame" x="163" y="278.5" width="49" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="bsf-xE-g9R" firstAttribute="top" secondItem="Sa0-kX-WTY" secondAttribute="bottom" constant="32" id="6UB-BH-jxF"/>
+                            <constraint firstItem="bsf-xE-g9R" firstAttribute="centerX" secondItem="XI9-YK-h96" secondAttribute="centerX" id="AO1-KM-wM4"/>
                             <constraint firstItem="Sa0-kX-WTY" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="DZA-x4-1mK"/>
-                            <constraint firstItem="XI9-YK-h96" firstAttribute="top" secondItem="Sa0-kX-WTY" secondAttribute="bottom" constant="30" id="KDf-Sq-Zqz"/>
+                            <constraint firstItem="XI9-YK-h96" firstAttribute="top" secondItem="bsf-xE-g9R" secondAttribute="bottom" constant="16" id="Jc1-i5-7nI"/>
                             <constraint firstItem="XI9-YK-h96" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="R1g-R3-feZ"/>
                             <constraint firstItem="XI9-YK-h96" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="s9a-Ys-yy8"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cardTextField" destination="XI9-YK-h96" id="POh-6j-sLp"/>
+                        <outlet property="typeLabel" destination="bsf-xE-g9R" id="OYz-33-16N"/>
                         <outlet property="validityLabel" destination="Sa0-kX-WTY" id="UAd-Yz-jhw"/>
                     </connections>
                 </viewController>

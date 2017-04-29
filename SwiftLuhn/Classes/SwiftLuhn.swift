@@ -21,7 +21,7 @@ public class SwiftLuhn {
         case Aura
     }
     
-    public enum CardError: ErrorType {
+    public enum CardError: Error {
         case Unsupported
         case Invalid
     }
@@ -60,11 +60,11 @@ public class SwiftLuhn {
         }
         
         let originalCheckDigit = formattedCardNumber.characters.last!
-        let characters = formattedCardNumber.characters.dropLast().reverse()
+        let characters = formattedCardNumber.characters.dropLast().reversed()
         
         var digitSum = 0
         
-        for (idx, character) in characters.enumerate() {
+        for (idx, character) in characters.enumerated() {
             let value = Int(String(character)) ?? 0
             if idx % 2 == 0 {
                 var product = value * 2
@@ -97,11 +97,11 @@ public class SwiftLuhn {
         
         for i in CardType.Amex.rawValue...CardType.Aura.rawValue {
             let cardType = CardType(rawValue: i)!
-            let regex = regularExpression(cardType)
+            let regex = regularExpression(cardType: cardType)
             
             let predicate = NSPredicate(format: "SELF MATCHES %@", regex)
             
-            if predicate.evaluateWithObject(cardNumber) == true {
+            if predicate.evaluate(with: cardNumber) == true {
                 foundCardType = cardType
                 break
             }
@@ -140,7 +140,7 @@ public extension SwiftLuhn.CardType {
     }
     
     init?(string: String) {
-        switch string.lowercaseString {
+        switch string.lowercased() {
         case "american express":
             self.init(rawValue: 0)
         case "visa":
