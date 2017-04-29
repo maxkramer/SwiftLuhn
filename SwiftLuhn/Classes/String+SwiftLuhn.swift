@@ -11,7 +11,7 @@ import Foundation
 public extension String {
     public func isValidCardNumber() -> Bool {
         do {
-            try SwiftLuhn.performLuhnAlgorithm(with: self)
+            try SwiftLuhn.performLuhnAlgorithm(cardNumber: self)
             return true
         }
         catch {
@@ -20,7 +20,7 @@ public extension String {
     }
     
     public func cardType() -> SwiftLuhn.CardType? {
-        let cardType = try? SwiftLuhn.cardType(for: self)
+        let cardType = try? SwiftLuhn.cardType(cardNumber: self)
         return cardType
     }
     
