@@ -18,52 +18,57 @@ open class SwiftLuhn {
         case jcb
         case maestro
         case rupay
+        case mir
     }
     
     public enum CardError: Error {
         case unsupported
         case invalid
     }
+    
     fileprivate class func regularExpression(for cardType: CardType) -> String {
         switch cardType {
         case .amex:
-            return "^3[47][0-9]{5,}$";
+            return "^3[47][0-9]{5,}$"
         case .dinersClub:
-            return "^3(?:0[0-5]|[68][0-9])[0-9]{4,}$";
+            return "^3(?:0[0-5]|[68][0-9])[0-9]{4,}$"
         case .discover:
-            return "^6(?:011|5[0-9]{2})[0-9]{3,}$";
+            return "^6(?:011|5[0-9]{2})[0-9]{3,}$"
         case .jcb:
-            return "^(?:2131|1800|35[0-9]{3})[0-9]{3,}$";
+            return "^(?:2131|1800|35[0-9]{3})[0-9]{3,}$"
         case .mastercard:
-            return "^5[1-5][0-9]{5,}$";
+            return "^5[1-5][0-9]{5,}$"
         case .visa:
-            return "^4[0-9]{6,}$";
+            return "^4[0-9]{6,}$"
         case .maestro:
-            return "^(5018|5020|5038|6304|6759|6761|6763)[0-9]{8,15}$";
+            return "^(5018|5020|5038|6304|6759|6761|6763)[0-9]{8,15}$"
         case .rupay:
-            return "^6[0-9]{15}$";
-            
+            return "^6[0-9]{15}$"
+        case .mir:
+            return "^220[0-9]{13}$"
         }
     }
+    
     fileprivate class func suggestionRegularExpression(for cardType: CardType) -> String {
         switch cardType {
         case .amex:
-            return "^3[47][0-9]+$";
+            return "^3[47][0-9]+$"
         case .dinersClub:
-            return "^3(?:0[0-5]|[68][0-9])[0-9]+$";
+            return "^3(?:0[0-5]|[68][0-9])[0-9]+$"
         case .discover:
-            return "^6(?:011|5[0-9]{2})[0-9]+$";
+            return "^6(?:011|5[0-9]{2})[0-9]+$"
         case .jcb:
-            return "^(?:2131|1800|35[0-9]{3})[0-9]+$";
+            return "^(?:2131|1800|35[0-9]{3})[0-9]+$"
         case .mastercard:
-            return "^5[1-5][0-9]+$";
+            return "^5[1-5][0-9]+$"
         case .visa:
-            return "^4[0-9]+$";
+            return "^4[0-9]+$"
         case .maestro:
-            return "^(5018|5020|5038|6304|6759|6761|6763)[0-9]+$";
+            return "^(5018|5020|5038|6304|6759|6761|6763)[0-9]+$"
         case .rupay:
-            return "^6[0-9]+$";
-            
+            return "^6[0-9]+$"
+        case .mir:
+            return "^220[0-9]+$"
         }
     }
     
@@ -147,10 +152,11 @@ public extension SwiftLuhn.CardType {
         case .jcb:
             return "JCB"
         case .maestro:
-            return "Maestro";
+            return "Maestro"
         case .rupay:
-            return "Rupay";
-
+            return "Rupay"
+        case .mir:
+            return "Mir"
         }
     }
     
@@ -172,6 +178,8 @@ public extension SwiftLuhn.CardType {
             self.init(rawValue: 6)
         case "rupay":
             self.init(rawValue: 7)
+        case "mir":
+            self.init(rawValue: 8)
         default:
             return nil
         }
