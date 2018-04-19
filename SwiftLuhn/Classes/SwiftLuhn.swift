@@ -71,12 +71,12 @@ open class SwiftLuhn {
         
         let formattedCardNumber = cardNumber.formattedCardNumber()
         
-        guard formattedCardNumber.characters.count >= 9 else {
+        guard formattedCardNumber.count >= 9 else {
             throw CardError.invalid
         }
         
-        let originalCheckDigit = formattedCardNumber.characters.last!
-        let characters = formattedCardNumber.characters.dropLast().reversed()
+        let originalCheckDigit = formattedCardNumber.last!
+        let characters = formattedCardNumber.dropLast().reversed()
         
         var digitSum = 0
         
