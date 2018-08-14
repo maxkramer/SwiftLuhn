@@ -37,7 +37,7 @@ open class SwiftLuhn {
         case .jcb:
             return "^(?:2131|1800|35[0-9]{3})[0-9]{3,}$"
         case .mastercard:
-            return "^5[1-5][0-9]{5,}$"
+            return "^5[1-5][0-9]{5,}|222[1-9][0-9]{3,}|22[3-9][0-9]{4,}|2[3-6][0-9]{5,}|27[01][0-9]{4,}|2720[0-9]{3,}$"
         case .visa:
             return "^4[0-9]{6,}$"
         case .maestro:
@@ -60,7 +60,7 @@ open class SwiftLuhn {
         case .jcb:
             return "^(?:2131|1800|35[0-9]{3})[0-9]+$"
         case .mastercard:
-            return "^5[1-5][0-9]+$"
+            return "^5[1-5][0-9]{5,}|222[1-9][0-9]{3,}|22[3-9][0-9]{4,}|2[3-6][0-9]{5,}|27[01][0-9]{4,}|2720[0-9]{3,}$"
         case .visa:
             return "^4[0-9]+$"
         case .maestro:
