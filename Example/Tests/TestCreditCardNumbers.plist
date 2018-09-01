@@ -94,6 +94,18 @@
 			<key>type</key>
 			<string>visa</string>
 		</dict>
+		<dict>
+			<key>number</key>
+			<string>2226350138938173</string>
+			<key>type</key>
+			<string>mastercard</string>
+		</dict>
+		<dict>
+			<key>number</key>
+			<string>2239468684686098</string>
+			<key>type</key>
+			<string>mastercard</string>
+		</dict>
 	</array>
 	<key>invalid</key>
 	<array>
