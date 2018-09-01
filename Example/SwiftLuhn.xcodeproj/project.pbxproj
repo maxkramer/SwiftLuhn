@@ -10,6 +10,7 @@
 		44E4CDCF060D148312B7A33B /* Pods_SwiftLuhn_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B96891BB859C116842802B3 /* Pods_SwiftLuhn_Example.framework */; };
 		501D07711E144680000E09A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501D07701E144680000E09A5 /* Main.storyboard */; };
 		501D07771E1446E1000E09A5 /* TestCreditCardNumbers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 501D07761E1446E1000E09A5 /* TestCreditCardNumbers.plist */; };
+		50CFCCA9213B026400265043 /* CardTypeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CFCCA8213B026400265043 /* CardTypeTest.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
@@ -32,6 +33,7 @@
 		0DF7860DB58A2EC870C366EC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		501D07701E144680000E09A5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		501D07761E1446E1000E09A5 /* TestCreditCardNumbers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestCreditCardNumbers.plist; sourceTree = "<group>"; };
+		50CFCCA8213B026400265043 /* CardTypeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTypeTest.swift; sourceTree = "<group>"; };
 		5B96891BB859C116842802B3 /* Pods_SwiftLuhn_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLuhn_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* SwiftLuhn_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLuhn_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				50CFCCA8213B026400265043 /* CardTypeTest.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -336,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				50CFCCA9213B026400265043 /* CardTypeTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
