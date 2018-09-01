@@ -1,6 +1,6 @@
 # SwiftLuhn
-[![Swift](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](https://swift.org)
-[![Circle CI](https://circleci.com/gh/MaxKramer/SwiftLuhn.svg?style=shield)](https://circleci.com/gh/MaxKramer/SwiftLuhn)
+[![Swift](https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat)](https://swift.org)
+[![CircleCI](https://circleci.com/gh/maxkramer/SwiftLuhn.svg?style=svg)](https://circleci.com/gh/maxkramer/SwiftLuhn)
 [![Version](https://img.shields.io/cocoapods/v/SwiftLuhn.svg?style=flat)](http://cocoapods.org/pods/SwiftLuhn)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/SwiftLuhn.svg?style=flat)](http://cocoapods.org/pods/SwiftLuhn)
@@ -8,7 +8,7 @@
 
 This is a port of the Luhn Algorithm, generally used for validating debit/credit card details, written in Swift.
 
-SwiftLuhn's HEAD is written in Swift 3. If your project doesn't support Swift 3 yet, please use the [0.1.0 tag](https://github.com/MaxKramer/SwiftLuhn/releases/tag/0.1.0).
+SwiftLuhn's HEAD is written in Swift 4. If your project doesn't support Swift 4 yet, please use the [0.2.1 tag](https://github.com/MaxKramer/SwiftLuhn/releases/tag/0.2.1).
 
 Objective-C port can be found at [https://github.com/MaxKramer/ObjectiveLuhn](https://github.com/MaxKramer/ObjectiveLuhn).
 
@@ -23,7 +23,7 @@ SwiftLuhn is available through [CocoaPods](http://cocoapods.org) or Carthage (wi
 To install it, simply add the following line to your Podfile:
 
 ```ruby
-pod "SwiftLuhn" # use '0.1.0' for Swift 2.X
+pod "SwiftLuhn" # use '0.2.1' for Swift 3.X
 ```
 
 Or alternatively the following line to your Cartfile:
