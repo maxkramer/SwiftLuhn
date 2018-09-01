@@ -39,10 +39,10 @@
 
 /* Begin PBXFileReference section */
 		0C141DEC1591E0D0962C82E48D920126 /* Pods-SwiftLuhn_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftLuhn_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		198DE2F513FBA55FA5C23DCECA7F2EBA /* Pods_SwiftLuhn_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftLuhn_Tests.framework; path = "Pods-SwiftLuhn_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		198DE2F513FBA55FA5C23DCECA7F2EBA /* Pods_SwiftLuhn_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLuhn_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		204CD85D754C6093F47BFC8C97D321C6 /* Pods-SwiftLuhn_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftLuhn_Example-resources.sh"; sourceTree = "<group>"; };
 		26612FDA601602D5B3AA7BC3614A57BA /* SwiftLuhn-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftLuhn-prefix.pch"; sourceTree = "<group>"; };
-		29A428A69D0F7195673C6A9147249D12 /* Pods_SwiftLuhn_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftLuhn_Example.framework; path = "Pods-SwiftLuhn_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29A428A69D0F7195673C6A9147249D12 /* Pods_SwiftLuhn_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLuhn_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4128DC70CEE877C2C39986682964D300 /* Pods-SwiftLuhn_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftLuhn_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		42AA43B00F663E4D705F307491788668 /* Pods-SwiftLuhn_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftLuhn_Example.modulemap"; sourceTree = "<group>"; };
 		463BFD3A207FE3D1582BB8B374D2C796 /* Pods-SwiftLuhn_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftLuhn_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -56,23 +56,23 @@
 		7E628199A0333A7D82C66DB2C418562C /* Pods-SwiftLuhn_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftLuhn_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		830A303EAF03D8D5DE5BEAE152380090 /* Pods-SwiftLuhn_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftLuhn_Example-frameworks.sh"; sourceTree = "<group>"; };
 		8BD4CE381879A6580776F04D9FDF2382 /* Pods-SwiftLuhn_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftLuhn_Tests-resources.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AA96A365515C1590A153121259E130D7 /* Pods-SwiftLuhn_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftLuhn_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AA97903A1CA4320966B789B443CB842C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB82082A144AAE54D60BC6AA53075706 /* SwiftLuhn.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLuhn.xcconfig; sourceTree = "<group>"; };
 		B03162408AB8821109300018C35FF43D /* SwiftLuhn-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftLuhn-dummy.m"; sourceTree = "<group>"; };
-		B0F8D4F2CE89DA3BCCB44E2F05C97B87 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B0F8D4F2CE89DA3BCCB44E2F05C97B87 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B5513591820750C416B674EB68212FA2 /* Pods-SwiftLuhn_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftLuhn_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		B62707046109C81867034985742DAAA0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B62707046109C81867034985742DAAA0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B66C4FB20CAD2F6D629FD2D09AF15869 /* Pods-SwiftLuhn_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftLuhn_Tests-umbrella.h"; sourceTree = "<group>"; };
 		B6EB4086CCE0F15D12E79D29E3334FB2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8D1A9D837D5095B0241143B073B04E0 /* String+SwiftLuhn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+SwiftLuhn.swift"; path = "SwiftLuhn/Classes/String+SwiftLuhn.swift"; sourceTree = "<group>"; };
 		C549D11540023C192B5F5C264CDB7E12 /* Pods-SwiftLuhn_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftLuhn_Tests.modulemap"; sourceTree = "<group>"; };
 		CD3923616C90E58403C08FEA2F9AD881 /* Pods-SwiftLuhn_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftLuhn_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D65B25B26C32EEAEEA6F1E578AC53F28 /* SwiftLuhn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftLuhn.framework; path = SwiftLuhn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65B25B26C32EEAEEA6F1E578AC53F28 /* SwiftLuhn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftLuhn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE25910B1B3310003223AAA5B9476979 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E05FA245C2878B0901EC8DE6AEDF7A7C /* SwiftLuhn-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftLuhn-umbrella.h"; sourceTree = "<group>"; };
-		FB0A7A5CA98B9623E7C900EEE68FC1D1 /* SwiftLuhn.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SwiftLuhn.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FB0A7A5CA98B9623E7C900EEE68FC1D1 /* SwiftLuhn.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = SwiftLuhn.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FD1F678AA4B3015CF8C56068DD564BB4 /* Pods-SwiftLuhn_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftLuhn_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -320,7 +320,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 0940;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -605,6 +605,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
