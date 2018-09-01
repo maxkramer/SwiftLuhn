@@ -1,11 +1,10 @@
 use_frameworks!
 
+platform :ios, '8.3'
 target 'SwiftLuhn_Example' do
   pod 'SwiftLuhn', :path => '../'
 
   target 'SwiftLuhn_Tests' do
     inherit! :search_paths
-
-    
   end
 end
