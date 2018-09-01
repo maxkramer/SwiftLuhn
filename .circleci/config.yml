@@ -1,9 +1,7 @@
 jobs:
   build:
     macos:
-      xcode: "9.4"
+      xcode: 9.4
     steps:
-      # Commands will execute in macOS container
-      # with Xcode 9.0 installed
-      - set -o pipefail && xcodebuild test -workspace Example/SwiftLuhn.xcworkspace -scheme SwiftLuhn-Example -sdk iphonesimulator11.4 ONLY_ACTIVE_ARCH=NO | xcpretty
-      - pod lib lint
+      - set -o pipefail && xcodebuild test -destination "platform=iOS Simulator,name=iPhone 7" -workspace Example/SwiftLuhn.xcworkspace -scheme SwiftLuhn-Example | xcpretty
+      - pod lib lint --swift-version=4
