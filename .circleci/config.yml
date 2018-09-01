@@ -1,3 +1,9 @@
-machine:
- xcode:
-  version: "8.1"
+jobs:
+  build:
+    macos:
+      xcode: "9.4"
+    steps:
+      # Commands will execute in macOS container
+      # with Xcode 9.0 installed
+      - set -o pipefail && xcodebuild test -workspace Example/SwiftLuhn.xcworkspace -scheme SwiftLuhn-Example -sdk iphonesimulator11.4 ONLY_ACTIVE_ARCH=NO | xcpretty
+      - pod lib lint
