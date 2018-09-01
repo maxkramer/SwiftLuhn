@@ -45,14 +45,14 @@ class Tests: XCTestCase {
             let numbersRegex = "[0-9]"
             let replacedNumbers = cardNumber.replacingOccurrences(of: numbersRegex, with: "", options: .regularExpression, range: nil)
             
-            return replacedNumbers.characters.count == 0
+            return replacedNumbers.count == 0
         }
         
         func containsNoWhitespaceOrNewlines(_ cardNumber: String) -> Bool {
             let withProhibitedContents = " \n  \n " + cardNumber + " \n  \n "
             let formattedContents = withProhibitedContents.formattedCardNumber()
             
-            return formattedContents.characters.count == cardNumber.characters.count
+            return formattedContents.count == cardNumber.count
         }
         
         let incorrectlyFormattedNumbers = [
