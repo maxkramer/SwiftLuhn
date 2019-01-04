@@ -20,7 +20,15 @@ open class SwiftLuhn {
         case rupay
         case mir
         
-        static var count: Int { return CardType.mir.rawValue + 1 }
+        static var allCards: [CardType] {
+            var values: [CardType] = []
+            var index = 1
+            while let element = self.init(rawValue: index) {
+                values.append(element)
+                index += 1
+            }
+            return values
+        }
     }
     
     public enum CardError: Error {
@@ -118,8 +126,7 @@ open class SwiftLuhn {
     class func cardType(for cardNumber: String, suggest: Bool = false) throws -> CardType {
         var foundCardType: CardType?
         
-        for i in CardType.amex.rawValue..<CardType.count {
-            let cardType = CardType(rawValue: i)!
+        for cardType in CardType.allCards {
             let regex = suggest ? suggestionRegularExpression(for: cardType) : regularExpression(for: cardType)
             
             let predicate = NSPredicate(format: "SELF MATCHES %@", regex)
