@@ -19,6 +19,8 @@ open class SwiftLuhn {
         case maestro
         case rupay
         case mir
+        
+        static var count: Int { return CardType.mir.rawValue + 1 }
     }
     
     public enum CardError: Error {
@@ -116,7 +118,7 @@ open class SwiftLuhn {
     class func cardType(for cardNumber: String, suggest: Bool = false) throws -> CardType {
         var foundCardType: CardType?
         
-        for i in CardType.amex.rawValue...CardType.jcb.rawValue {
+        for i in CardType.amex.rawValue..<CardType.count {
             let cardType = CardType(rawValue: i)!
             let regex = suggest ? suggestionRegularExpression(for: cardType) : regularExpression(for: cardType)
             
