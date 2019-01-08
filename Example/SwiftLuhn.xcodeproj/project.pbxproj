@@ -49,7 +49,7 @@
 		A2BCD9AE2D95C7DCB60CB392 /* Pods-SwiftLuhn_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLuhn_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLuhn_Example/Pods-SwiftLuhn_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AA640ED277322E98AADE4DB9 /* Pods-SwiftLuhn_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLuhn_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLuhn_Tests/Pods-SwiftLuhn_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B2FBF89F16A4DC0F2751FEC7 /* Pods-SwiftLuhn_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLuhn_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLuhn_Example/Pods-SwiftLuhn_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B90E7FE8BD11978D5BB1B434 /* SwiftLuhn.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftLuhn.podspec; path = ../SwiftLuhn.podspec; sourceTree = "<group>"; };
+		B90E7FE8BD11978D5BB1B434 /* SwiftLuhn.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftLuhn.podspec; path = ../SwiftLuhn.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CC106E6E669DC2ACEADFF7AC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
