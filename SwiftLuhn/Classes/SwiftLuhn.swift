@@ -87,7 +87,7 @@ open class SwiftLuhn {
         }
     }
     
-    class func performLuhnAlgorithm(with cardNumber: String) throws {
+    public class func performLuhnAlgorithm(with cardNumber: String) throws {
         
         let formattedCardNumber = cardNumber.formattedCardNumber()
         
@@ -128,7 +128,7 @@ open class SwiftLuhn {
         }
     }
     
-    class func cardType(for cardNumber: String, suggest: Bool = false) throws -> CardType {
+    public class func cardType(for cardNumber: String, suggest: Bool = false) throws -> CardType {
         var foundCardType: CardType?
         
         for i in CardType.amex.rawValue...CardType.jcb.rawValue {
