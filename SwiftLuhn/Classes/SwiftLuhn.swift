@@ -24,7 +24,7 @@ open class SwiftLuhn {
             var values: [CardType] = []
             var index = 1
             while let element = self.init(rawValue: index) {
-                values.append(element);
+                values.append(element)
                 index += 1
             }
             return values
