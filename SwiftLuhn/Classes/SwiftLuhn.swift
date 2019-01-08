@@ -131,7 +131,7 @@ open class SwiftLuhn {
     public class func cardType(for cardNumber: String, suggest: Bool = false) throws -> CardType {
         var foundCardType: CardType?
         
-        for i in CardType.amex.rawValue...CardType.jcb.rawValue {
+        for i in CardType.amex.rawValue...CardType.aura.rawValue {
             let cardType = CardType(rawValue: i)!
             let regex = suggest ? suggestionRegularExpression(for: cardType) : regularExpression(for: cardType)
             
