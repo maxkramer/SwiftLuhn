@@ -20,7 +20,10 @@ class CardTypeTest: XCTestCase {
             SwiftLuhn.CardType.jcb: "JCB",
             SwiftLuhn.CardType.maestro: "Maestro",
             SwiftLuhn.CardType.rupay: "Rupay",
-            SwiftLuhn.CardType.mir: "Mir"
+            SwiftLuhn.CardType.mir: "Mir",
+            SwiftLuhn.CardType.elo: "Elo",
+            SwiftLuhn.CardType.hipercard: "Hipercard",
+            SwiftLuhn.CardType.aura: "Aura"
         ]
         
         mapping.forEach { key, value in

@@ -69,7 +69,7 @@ You can also get the type of the card being used which will be one of:
 |Diner's Club|
 |JCB|
 |Elo|
-|HiperCard|
+|Hipercard|
 |Aura|
 
 ```swift
