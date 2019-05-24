@@ -6,6 +6,8 @@
 [![License](https://img.shields.io/cocoapods/l/SwiftLuhn.svg?style=flat)](http://cocoapods.org/pods/SwiftLuhn)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftLuhn.svg?style=flat)](http://cocoapods.org/pods/SwiftLuhn)
 
+## Warning! This repository is no longer maintained.
+
 This is a port of the Luhn Algorithm, generally used for validating debit/credit card details, written in Swift.
 
 SwiftLuhn's HEAD is written in Swift 4. If your project doesn't support Swift 4 yet, please use the [0.2.1 tag](https://github.com/MaxKramer/SwiftLuhn/releases/tag/0.2.1).
