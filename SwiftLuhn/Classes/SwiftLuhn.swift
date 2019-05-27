@@ -19,6 +19,9 @@ open class SwiftLuhn {
         case maestro
         case rupay
         case mir
+        case elo
+        case hipercard
+        case aura
     }
     
     public enum CardError: Error {
@@ -46,6 +49,12 @@ open class SwiftLuhn {
             return "^6[0-9]{15}$"
         case .mir:
             return "^220[0-9]{13}$"
+        case .elo:
+            return "^(4011(78|79)|43(1274|8935)|45(1416|7393|763(1|2))|50(4175|6699|67[0-7][0-9]|9000)|50(9[0-9][0-9][0-9])|627780|63(6297|6368)|650(03([^4])|04([0-9])|05(0|1)|05([7-9])|06([0-9])|07([0-9])|08([0-9])|4([0-3][0-9]|8[5-9]|9[0-9])|5([0-9][0-9]|3[0-8])|9([0-6][0-9]|7[0-8])|7([0-2][0-9])|541|700|720|727|901)|65165([2-9])|6516([6-7][0-9])|65500([0-9])|6550([0-5][0-9])|655021|65505([6-7])|6516([8-9][0-9])|65170([0-4]))"
+        case .hipercard:
+            return "^(38|60)[0-9]{11,17}$"
+        case .aura:
+            return "^50[0-9]{14,17}$"
         }
     }
     
@@ -69,10 +78,16 @@ open class SwiftLuhn {
             return "^6[0-9]+$"
         case .mir:
             return "^220[0-9]+$"
+        case .elo:
+            return "^(4011(78|79)|43(1274|8935)|45(1416|7393|763(1|2))|50(4175|6699|67[0-7][0-9]|9000)|50(9[0-9][0-9][0-9])|627780|63(6297|6368)|650(03([^4])|04([0-9])|05(0|1)|05([7-9])|06([0-9])|07([0-9])|08([0-9])|4([0-3][0-9]|8[5-9]|9[0-9])|5([0-9][0-9]|3[0-8])|9([0-6][0-9]|7[0-8])|7([0-2][0-9])|541|700|720|727|901)|65165([2-9])|6516([6-7][0-9])|65500([0-9])|6550([0-5][0-9])|655021|65505([6-7])|6516([8-9][0-9])|65170([0-4]))"
+        case .hipercard:
+            return "^(38|60)[0-9]{11,17}$"
+        case .aura:
+            return "^50[0-9]{14,17}$"
         }
     }
     
-    class func performLuhnAlgorithm(with cardNumber: String) throws {
+    public class func performLuhnAlgorithm(with cardNumber: String) throws {
         
         let formattedCardNumber = cardNumber.formattedCardNumber()
         
@@ -113,10 +128,10 @@ open class SwiftLuhn {
         }
     }
     
-    class func cardType(for cardNumber: String, suggest: Bool = false) throws -> CardType {
+    public class func cardType(for cardNumber: String, suggest: Bool = false) throws -> CardType {
         var foundCardType: CardType?
         
-        for i in CardType.amex.rawValue...CardType.jcb.rawValue {
+        for i in CardType.amex.rawValue...CardType.aura.rawValue {
             let cardType = CardType(rawValue: i)!
             let regex = suggest ? suggestionRegularExpression(for: cardType) : regularExpression(for: cardType)
             
@@ -157,6 +172,12 @@ public extension SwiftLuhn.CardType {
             return "Rupay"
         case .mir:
             return "Mir"
+        case .elo:
+            return "Elo"
+        case .hipercard:
+            return "Hipercard"
+        case .aura:
+            return "Aura"
         }
     }
     
@@ -180,6 +201,12 @@ public extension SwiftLuhn.CardType {
             self.init(rawValue: 7)
         case "mir":
             self.init(rawValue: 8)
+        case "elo":
+            self.init(rawValue: 9)
+        case "hipercard":
+            self.init(rawValue: 10)
+        case "aura":
+            self.init(rawValue: 11)
         default:
             return nil
         }

@@ -70,6 +70,9 @@ You can also get the type of the card being used which will be one of:
 |Discover|
 |Diner's Club|
 |JCB|
+|Elo|
+|Hipercard|
+|Aura|
 
 ```swift
 do {
@@ -93,6 +96,10 @@ To run the unit test suite, please open the example project and hit CMD + U.
 ## Author
 
 Max Kramer, max@maxkramer.co, [@maxkramer](http://twitter.com/maxkramer)
+
+Elo, Hipercard and Aura by, [@bocato]
+
+Elo update by, André Ferreira, [@andre991](https://github.com/andre991)
 
 ## License
 
