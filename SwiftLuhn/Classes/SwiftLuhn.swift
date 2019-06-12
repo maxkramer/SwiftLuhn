@@ -19,6 +19,7 @@ open class SwiftLuhn {
         case maestro
         case rupay
         case mir
+        case unionpay
     }
     
     public enum CardError: Error {
@@ -46,6 +47,8 @@ open class SwiftLuhn {
             return "^6[0-9]{15}$"
         case .mir:
             return "^220[0-9]{13}$"
+        case .unionpay:
+            return "^62[0-9]{14}$"
         }
     }
     
@@ -69,6 +72,8 @@ open class SwiftLuhn {
             return "^6[0-9]+$"
         case .mir:
             return "^220[0-9]+$"
+        case .unionpay:
+            return "^62[0-9]+$"
         }
     }
     
@@ -157,6 +162,8 @@ public extension SwiftLuhn.CardType {
             return "Rupay"
         case .mir:
             return "Mir"
+        case .unionpay:
+            return "Unionpay"
         }
     }
     
@@ -180,6 +187,8 @@ public extension SwiftLuhn.CardType {
             self.init(rawValue: 7)
         case "mir":
             self.init(rawValue: 8)
+        case "unionpay":
+            self.init(rawValue: 9)
         default:
             return nil
         }
