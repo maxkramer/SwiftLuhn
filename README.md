@@ -90,10 +90,6 @@ To run the unit test suite, please open the example project and hit CMD + U.
 |:---|:------|:-----|
 |Paypal|[http://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/credit_card_numbers.htm](http://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/credit_card_numbers.htm)|List of valid credit card numbers for the unit tests|
 
-## Author
-
-Max Kramer, max@maxkramer.co, [@maxkramer](http://twitter.com/maxkramer)
-
 ## License
 
 SwiftLuhn is available under the MIT license. See the LICENSE file for more info.
